@@ -45,7 +45,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-        architecture: ${{ matrix.python-arch }}
+        architecture: ${{ matrix.config.python-arch }}
 
     - name:  Build Windows
       if: runner.os == 'Windows'
